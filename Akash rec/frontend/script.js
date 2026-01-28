@@ -12,7 +12,7 @@ function loadCategory(category) {
 
 // Load folder contents
 function fetchFiles(category, folderId) {
-  let url = `http://localhost:5000/api/drive/files?category=${category}`;
+  let url = `/api/drive/files?category=${category}`;
   if (folderId) url += `&folderId=${folderId}`;
 
   fetch(url)
@@ -65,4 +65,5 @@ function fetchFiles(category, folderId) {
         filesDiv.appendChild(card);
       });
     });
+
 }
