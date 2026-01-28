@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "Akash rec/backend/server.js"
+      "dest": "backend/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "Akash rec/frontend/$1"
+      "dest": "frontend/$1"
     }
   ]
 }
