@@ -14,8 +14,8 @@ app.use(express.json());
 //mongoose.connect(process.env.MONGO_URI)
 //.then(() => console.log("MongoDB Connected"));
 
-//app.use("/api/drive", driveRoutes);
-app.use("/api", driveRoutes);
+app.use("/api/drive", driveRoutes);
+//app.use("/api", driveRoutes);
 
 
 export default app;
@@ -25,4 +25,5 @@ export default app;
 //app.listen(5000, () => {
  // console.log("Server running on port 5000");
 //});}
+
 
